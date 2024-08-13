@@ -27,7 +27,7 @@ body{
 }
 
 .logo{
-    font-size: 32px;
+    font-size: 27px;
     font-weight: 600;
     color: #fff;
     text-decoration: none;
@@ -84,7 +84,7 @@ body{
 }
 
 .home-content h1{
-    font-size: 78px;
+    font-size: 65px;
     font-weight: 700;
     text-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
