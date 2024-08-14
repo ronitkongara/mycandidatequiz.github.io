@@ -21,12 +21,18 @@ body{
     padding: 20px 10%;
     background: transparent;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     z-index: 100;
 }
 
-.logo{
+.logo img{
+    transform: translate(-5px,8px);
+    max-width: 13%;
+    max-height: 13%;
+}
+
+.logo a{
     font-size: 20px;
     font-weight: 600;
     color: #fff;
