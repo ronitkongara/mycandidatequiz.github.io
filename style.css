@@ -61,6 +61,7 @@ body{
     transition: .3s ease;
     pointer-events: auto;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .main.active{
