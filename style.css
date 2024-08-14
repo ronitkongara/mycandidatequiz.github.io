@@ -60,6 +60,7 @@ body{
     background-position: center;
     transition: .3s ease;
     pointer-events: auto;
+    overflow-y: scroll;
 }
 
 .main.active{
