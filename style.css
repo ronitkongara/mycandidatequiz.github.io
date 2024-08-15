@@ -9,7 +9,7 @@
 
 body{
     color:#fff;
-    background: #09001d;
+    background: black;
     overflow: hidden;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -57,7 +57,7 @@ body{
 
 .main{
     min-height: 100vh;
-    background: url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Image-8.jpg') no-repeat;
+    background: #09001d;
     background-size: cover;
     background-position: center;
     transition: .3s ease;
@@ -98,7 +98,7 @@ body{
 }
 
 .home-content p{
-    font-size: 16;
+    font-size: 20px;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, .3);
     margin-bottom: 30px;
@@ -434,4 +434,102 @@ body{
 .buttons button:nth-child(2):hover{
     background: #c40094;
     color: #fff;
+}
+
+.team-section{
+    width: 85%;
+    padding: 25px;
+    margin: auto;
+    text-align: center;
+}
+
+.team-section h2{
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.team-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.team-member:hover{
+    transform: translateY(-10px);
+}
+
+.team-member img{
+    border-radius: 50%;
+    border: 4px solid;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3{
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.team-member .title{
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.team-member .content{
+    font-size: 16px;
+    color: #555;
+    line-height: 1.3;
+}
+
+.about-container{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+}
+
+.about-home{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content{
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(20%);
+}
+
+.about-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    margin-bottom: 30px;
+}
+
+.about-content p{
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    margin-bottom: 250px;
 }
