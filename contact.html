@@ -10,6 +10,7 @@
 <body>
     <main class="main">
         <header class="header">
+
             <a href="#" class="logo">Quiz</a>
 
             <nav class="navbar">
@@ -19,42 +20,49 @@
             </nav>
         </header>
     </main>
-
         <link href="contact-form.css" rel="stylesheet">
 
         <div class="fcf-body">
 
             <div id="fcf-form">
             <h3 class="fcf-h3">Contact us</h3>
-        
-            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdLbWSZ_60klo5k1ZxKYex5znyDJWK_GofsDYeYw0RiNFUjlg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+            <!--<form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">-->
                 
                 <div class="fcf-form-group">
                     <label for="Name" class="fcf-label">Your name</label>
                     <div class="fcf-input-group">
-                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        <input type="text" name="entry.1425388707" id="entry.1425388707" class="fcf-form-control" required>
                     </div>
                 </div>
         
                 <div class="fcf-form-group">
                     <label for="Email" class="fcf-label">Your email address</label>
                     <div class="fcf-input-group">
-                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        <input type="email" name="entry.1821016998" id="entry.1821016998" class="fcf-form-control" required>
                     </div>
                 </div>
         
                 <div class="fcf-form-group">
                     <label for="Message" class="fcf-label">Your message</label>
                     <div class="fcf-input-group">
-                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                        <textarea name="entry.933572278" id="entry.933572278" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
                     </div>
                 </div>
         
                 <div class="fcf-form-group">
-                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                    <button type="submit" value="Submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block" onclick="changeLabel()">Send Message</button>
                 </div>
-        
+
+                <script>
+                    function changeLabel() {
+                        const button = 
+                            document.querySelector('.fcf-btn');
+                        button.innerHTML = 'Message Sent';
+                    }
+                </script>
             </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
             </div>
         
         </div>
