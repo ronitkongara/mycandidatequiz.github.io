@@ -9,7 +9,7 @@
 
 .main{
     min-height: 100vh;
-    background: url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Image-8.jpg') no-repeat;
+    background: #09001d;
     background-size: cover;
     background-position: center;
     transition: .3s ease;
