@@ -263,9 +263,9 @@ function checkAnswer(answer){
     }
     if (questionCount == 27) { 
         if (userAnswer === "Support") {
-            questionCount = 27;
+            questionCount = 28;
         } else if (userAnswer === "Oppose") {
-            questionCount = 28; 
+            questionCount = 27; 
         }
     }
 }
