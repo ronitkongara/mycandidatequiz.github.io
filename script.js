@@ -297,10 +297,10 @@ function showResultBox(){
         scoretext.innerHTML = `Your views match most with:<br>Donald Trump`;
         progressEndValue = Math.round((trumpScore / realQuestionCount) * 100);
     }
-    /*if(kennedyScore == Math.max(harrisScore, trumpScore, kennedyScore, westScore, steinScore, oliverScore)){
-        scoretext.innerHTML = `Your views match most with:<br>Robert F. Kennedy Jr.`;
+    if(kennedyScore == Math.max(harrisScore, trumpScore, kennedyScore, westScore, steinScore, oliverScore)){
+        scoretext.innerHTML = `Your views match most with:<br>Robert F. Kennedy Jr (who now is endorsing Trump).`;
         progressEndValue = Math.round((kennedyScore / realQuestionCount) * 100);
-    }*/
+    }
     if(westScore == Math.max(harrisScore, trumpScore, kennedyScore, westScore, steinScore, oliverScore)){
         scoretext.innerHTML = `Your views match most with:<br>Cornel West`;
         progressEndValue = Math.round((westScore / realQuestionCount) * 100);
